@@ -1,0 +1,374 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fafafa;
+}
+body h1 {
+  font-size: 36px;
+  text-align: center;
+}
+body li {
+  color: black;
+  list-style: none;
+}
+body h2 {
+  color: rgb(41, 39, 39);
+  font-size: 25px;
+}
+
+header .icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+header .logo {
+  width: 150px;
+  height: 70px;
+}
+header .logo-usuario {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #fafafa, rgba(226, 216, 216, 0.535));
+}
+header .usuario-icon {
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .usuario-icon p {
+  margin-right: 15px;
+  margin-top: 15px;
+}
+header .usuario-icon img {
+  margin-right: 10px;
+}
+header .nav-index ul {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px rgba(119, 114, 114, 0.5);
+  padding: 10px;
+}
+header .nav-index ul li {
+  margin: 10px 0;
+}
+header .nav-index ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  border: solid 1px rgba(119, 114, 114, 0.5);
+  border-radius: 10px;
+}
+header .nav-index ul li a:hover {
+  background-color: rgba(212, 205, 205, 0.5);
+  cursor: pointer;
+  transition: 1s;
+}
+
+button {
+  background-color: #fafafa;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: rgba(212, 205, 205, 0.5);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.main-index {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "imagen imagen productos productos" "imagen imagen productos productos" "imagen imagen productos productos" "imagen imagen productos productos";
+}
+.main-index .imagen-index {
+  grid-area: imagen;
+}
+.main-index .imagen-index img {
+  width: 100%;
+}
+.main-index .productos {
+  grid-area: productos;
+}
+
+footer {
+  display: flex;
+  background-image: linear-gradient(to right, #fafafa, rgb(168, 161, 161));
+  gap: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.1rem;
+}
+footer i {
+  position: fixed;
+  right: 30px;
+  bottom: 35px;
+  font-size: 40px;
+  transition: 1s;
+  z-index: 1;
+}
+footer i:hover {
+  cursor: pointer;
+  font-size: 45px;
+  transform: rotate(360deg);
+}
+
+main section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "producto1 producto1 cabello cabello" "producto1 producto1 cabello cabello" "producto2 producto2 cabello cabello" "producto2 producto2 cabello cabello";
+}
+main section .producto-cabello-1 {
+  grid-area: producto1;
+  display: flex;
+}
+main section .producto-cabello-1 .seccion-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px;
+  padding: 10px;
+}
+main section .p-cabello img {
+  width: 65%;
+  height: 65%;
+}
+main section .producto-cabello-2 {
+  grid-area: producto2;
+  display: flex;
+}
+main section .producto-cabello-2 .seccion-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px;
+  padding: 10px;
+}
+main section .cuidado-cabello {
+  grid-area: cabello;
+}
+main section .cuidado-cabello img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-makeup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "producto1 producto2" "producto3 producto4";
+}
+.main-makeup img {
+  width: 60%;
+  height: 60%;
+}
+.main-makeup div {
+  border: solid 0.5px rgba(119, 114, 114, 0.5);
+}
+.main-makeup .producto-makeup-1, .main-makeup .producto-makeup-4, .main-makeup .producto-makeup-3, .main-makeup .producto-makeup-2 {
+  grid-area: producto1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-makeup .producto-makeup-2 {
+  grid-area: producto2;
+}
+.main-makeup .producto-makeup-3 {
+  grid-area: producto3;
+}
+.main-makeup .producto-makeup-4 {
+  grid-area: producto4;
+}
+
+.main-skincare {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "producto1 imagen" "producto2 imagen";
+}
+.main-skincare .producto-skincare-1 {
+  grid-area: producto1;
+}
+.main-skincare .producto-skincare-2 {
+  grid-area: producto2;
+}
+.main-skincare .imagen-skincare {
+  grid-area: imagen;
+  width: 100%;
+  height: 100%;
+}
+.main-skincare .p-skincare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(119, 114, 114, 0.5);
+  margin: 25px;
+}
+.main-skincare .p-skincare:hover {
+  background-color: rgba(212, 205, 205, 0.5);
+  cursor: pointer;
+  transition: 1s;
+}
+.main-skincare .p-skincare img {
+  width: 50%;
+  height: 45%;
+}
+
+.main-asesor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-asesor .btn-group {
+  display: flex;
+  text-align: center;
+}
+.main-asesor .texto-color {
+  color: rgb(124, 69, 175);
+}
+.main-asesor .icono-busqueda {
+  width: 35px;
+  height: 30px;
+}
+
+.precio {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#promo {
+  font-size: 20px;
+  color: red;
+}
+
+#precio-tachado {
+  text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  .logo-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .usuario-icon {
+    margin-bottom: 10px;
+  }
+  .nav-index ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .nav-index ul li {
+    font-size: 1.5rem;
+  }
+  .main-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-index h1 {
+    margin: 20px 0;
+  }
+  i {
+    display: none;
+  }
+  .main-cuidado-cabello, .producto-cabello-2, .producto-cabello-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .main-makeup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .main-makeup .producto-makeup-3 {
+    width: 100%;
+  }
+  .main-makeup .producto-makeup-4 {
+    width: 100%;
+  }
+  .main-makeup div {
+    padding: 20px 0;
+  }
+  .main-makeup p {
+    font-size: 2rem;
+  }
+  .main-makeup button {
+    font-size: 1.5rem;
+  }
+  .main-skincare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .main-skincare p {
+    font-size: 1.8rem;
+  }
+  .main-skincare #promo {
+    font-size: 1.8rem;
+  }
+  .main-asesor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .main-asesor p {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  main section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "producto1 cabello" "producto2 cabello";
+  }
+  .producto-cabello-1 {
+    grid-area: producto1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .producto-cabello-2 {
+    grid-area: producto2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cuidado-cabello {
+    grid-area: cabello;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+@import "../utilities/mixins";
+
+main section{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "producto1 producto1 cabello cabello"
+    "producto1 producto1 cabello cabello"
+    "producto2 producto2 cabello cabello"
+    "producto2 producto2 cabello cabello";
+    
+    .producto-cabello-1 {
+        grid-area: producto1;
+        display: flex;
+
+        .seccion-1 {
+            @include flex;
+            margin: 0 10px;
+            padding: 10px;
+        }    
+    }
+
+    .p-cabello {
+        img {
+            width: 65%;
+            height: 65%;
+        }
+    }
+    
+    .producto-cabello-2 {
+        grid-area: producto2;
+        display: flex;
+
+        .seccion-2 {
+            @include flex;
+            margin: 0 10px;
+            padding: 10px;
+        }
+    }
+
+    .cuidado-cabello {
+        grid-area: cabello;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

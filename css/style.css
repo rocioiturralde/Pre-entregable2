@@ -1,9 +1,9 @@
-body {
+/* body {
     font-family: "Inter", sans-serif;
     background-color: #e9e9e9;
-}
+} */
 
-#icon {
+/* #icon {
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -12,9 +12,9 @@ body {
 #logo {
     width: 150px;
     height: 70px;
-}
+} */
 
-h1 {
+/* h1 {
     font-size: 36px;
     text-align: center;
 }
@@ -27,9 +27,9 @@ li {
 h2 {
     color: rgb(41, 39, 39);
     font-size: 25px; 
-}
+} */
 
-button {
+/* button {
     background-color: #e9e9e9;
     padding: 5px;
     font-size: 15px;
@@ -39,7 +39,7 @@ button {
 button:hover {
     background-color: rgba(185, 181, 181, 0.5);
     cursor: pointer;
-}
+} */
 
 .precio {
     font-size: 17px;

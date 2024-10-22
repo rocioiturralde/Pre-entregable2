@@ -1,0 +1,100 @@
+@import "../utilities/mixins";
+
+@media (max-width: 768px){
+    .logo-usuario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .usuario-icon {
+        margin-bottom: 10px;
+    }
+    .nav-index ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 10px 0;
+        li {
+            font-size: 1.5rem;
+        }
+    }
+
+    // Media-queries de index
+
+    .main-index {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            margin: 20px 0;
+        }
+    }
+    i {
+        display: none;
+    }
+
+    // Media-queries de página cabello
+
+    .main-cuidado-cabello {
+        @include flex;
+        justify-content: center;
+    }
+    .producto-cabello-1 {
+        @extend .main-cuidado-cabello;
+    }
+
+    .producto-cabello-2 {
+        @extend .main-cuidado-cabello;
+    }
+
+    // Media-queries de makeup
+
+    .main-makeup {
+        @include flex;
+        justify-content: center;
+        .producto-makeup-3 {
+            width: 100%;
+        }
+        .producto-makeup-4{
+            width: 100%;
+        }
+        div {
+            padding: 20px 0;
+        }
+        p {
+            font-size: 2rem;
+        }
+        button {
+            font-size: 1.5rem;
+        }
+        }
+
+        // Media-queries de skincare 
+
+        .main-skincare {
+            @include flex;
+            justify-content: center;
+            p {
+                font-size: 1.8rem;
+            }
+            #promo {
+                font-size: 1.8rem;
+            }
+        }
+
+        // Media-queries de te asesoramos
+
+        .main-asesor {
+            @include flex;
+            justify-content: center;
+            p {
+                font-size: 1.8rem;
+            }
+            
+        }
+    
+
+        
+}

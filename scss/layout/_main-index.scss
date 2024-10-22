@@ -1,0 +1,20 @@
+.main-index {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "imagen imagen productos productos"
+    "imagen imagen productos productos"
+    "imagen imagen productos productos"
+    "imagen imagen productos productos";
+
+    .imagen-index {
+        grid-area: imagen;
+        img {
+            width: 100%;
+        }
+    }
+    .productos {
+        grid-area: productos;
+    }
+}

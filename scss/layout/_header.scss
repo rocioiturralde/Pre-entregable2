@@ -1,0 +1,59 @@
+@import "../utilities/variables";
+
+header {
+    .icon {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        }
+    
+    .logo {
+        width: 150px;
+        height: 70px;
+        }
+
+    .logo-usuario {
+        display: flex;
+        justify-content: space-between;
+        background-image: linear-gradient(to right, #fafafa, rgba(226, 216, 216, 0.535));
+        }
+        
+    .usuario-icon {
+        display: flex;
+        text-align: center;
+        justify-content: flex-end;
+        align-items: center;
+        p {
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+        img {
+            margin-right: 10px;
+        }
+        }
+    .nav-index {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            border: solid 1px $color-border;
+            padding: 10px;
+            li {
+                margin: 10px 0;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    margin: 10px;
+                    padding: 10px;
+                    border: solid 1px rgb(119, 114, 114, 0.5);
+                    border-radius: 10px;
+                    &:hover {
+                        background-color: $color-hover;
+                        cursor: pointer;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }        
+    
+}

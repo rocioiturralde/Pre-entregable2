@@ -1,0 +1,40 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.main-skincare {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "producto1 imagen"
+    "producto2 imagen";
+
+    .producto-skincare-1 {
+        grid-area: producto1;
+    }
+    
+    .producto-skincare-2 {
+        grid-area: producto2;
+    }
+
+    .imagen-skincare {
+        grid-area: imagen;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .p-skincare{
+        @include flex;
+        border: 1px solid $color-border;
+        margin: 25px;
+        &:hover {
+            background-color: $color-hover;
+            cursor: pointer;
+            transition: 1s;
+        }
+        img {
+            width: 50%;
+            height: 45%;
+        }
+    }
+}

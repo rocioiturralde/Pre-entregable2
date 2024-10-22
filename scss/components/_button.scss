@@ -1,0 +1,16 @@
+@import "../utilities/variables";
+
+button {
+    background-color: #fafafa;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+
+    &:hover{
+        background-color: $color-hover;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+}
+

@@ -1,0 +1,17 @@
+.main-asesor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-group {
+        display: flex;
+        text-align: center;
+    }
+    .texto-color {
+        color:rgb(124, 69, 175);
+    }
+    .icono-busqueda {
+        width: 35px;
+        height: 30px;
+    }
+}

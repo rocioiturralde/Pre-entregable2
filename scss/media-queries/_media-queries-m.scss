@@ -1,0 +1,23 @@
+@media (min-width: 768px) and (max-width: 1200px){
+    main section {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "producto1 cabello"
+        "producto2 cabello"
+    }
+
+    .producto-cabello-1 {
+        grid-area: producto1; 
+        @include flex;
+    }
+    .producto-cabello-2 {
+        grid-area: producto2;
+        @include flex;
+    }
+    .cuidado-cabello {
+        grid-area: cabello; 
+    }
+        
+}
